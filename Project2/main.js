@@ -1,5 +1,5 @@
 const containerEl = document.querySelector('.container');
-const careers = ['YouTuber', 'Web Developer', 'Freelancer', 'Instructor'];
+const careers = ['YouTuber', 'WebDeveloper', 'Freelancer', 'Instructor'];
 let careerIndex = 0;
 let characterIndex = 0;
 
@@ -12,10 +12,9 @@ function randomText() {
         careerIndex++
         characterIndex = 0;
     }
+    // これは全ての職業名が表示された確認
     if (careerIndex === careers.length) {
         careerIndex = 0;
     }
     setTimeout(randomText, 400)
-
-
 }
