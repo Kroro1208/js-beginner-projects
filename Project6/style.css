@@ -7,9 +7,9 @@ body {
   transition: 0.4s;
 }
 
-.input {
+/* .input {
   visibility: hidden;
-}
+} */
 
 .label {
   position: absolute;
