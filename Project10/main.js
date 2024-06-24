@@ -6,7 +6,7 @@ const breakModal = document.getElementById('breakModal');
 const closeModal = document.getElementById('closeModal');
 
 let interval;
-let timeLeft = 10;
+let timeLeft = 1500;
 let isBreakTime = false;
 
 function updateTimer() {
@@ -29,7 +29,7 @@ function startTimer() {
                 isBreakTime = false;
             } else {
                 breakModal.classList.add("show");
-                timeLeft = 10;
+                timeLeft = 500;
                 isBreakTime = true;
             }
             startTimer();
