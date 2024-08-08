@@ -19,6 +19,11 @@ function userSelfInfo(user: User) {
     console.log(`I am ${user.name}, ${user.age} years old`);
 }
 
+function userSelfInfo2({name, age}) {
+    console.log(`I am ${name}, ${age} years old`);
+}
+
 
 userInfoTabel(users);
-users.forEach(userSelfInfo);
+users.forEach(userSelfInfo); // ループで出力
+userSelfInfo2(user1); // 個別で出力
