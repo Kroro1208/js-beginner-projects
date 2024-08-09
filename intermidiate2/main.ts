@@ -7,8 +7,9 @@ type User18 = {
 const user: User18 = { name: "kitagawa", email: "keiko@google.com", age: 27};
 
 function user18(user: User18) {
-    const selfAge = user.age >= 18 ? `I am an Adult, ${user.age} years old` : 'I am young';
-    console.log(selfAge);
+    const { age } = user;
+    const selfAge = age >= 18 ? "an adult" : "a young";
+    console.log(`I am ${selfAge}, ${age} years old.`);
 }
 
 user18(user);
